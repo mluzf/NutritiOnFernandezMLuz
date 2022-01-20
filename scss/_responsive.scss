@@ -1,0 +1,307 @@
+@media screen and (max-width: 600px){
+    
+    /*Header*/
+    header {
+        display:grid;
+        gap:0.3rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 0fr;
+        grid-template-areas: 
+            "logo"
+            "nav"
+            "iniciar";
+
+        nav{
+            ul{
+            font-size: 0.9rem;
+            padding-left:0;
+            }
+        }
+
+        .logo{
+            img{
+                width:55%;
+            }
+        }
+
+        .iniciar{
+            justify-self:center;
+        }
+    }
+
+    /* Section intro + carrusel*/
+    .intro{
+        display:grid;
+        gap:0.3rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "textoIntro"
+        "carrusel";
+    }
+
+    /*Section beneficios*/
+    .beneficios{
+        display:grid;
+        gap:0.3rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "bTitulo"
+            "beneficio1" 
+            "beneficio2" 
+            "beneficio3";
+    }
+
+    /*Section descripción beneficios*/
+    .descBeneficios{
+
+        .dBeneficio1{
+            display:grid;
+            gap:0.3rem;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:  
+                "textoDB1" 
+                "imgDB1";
+                margin-top: 1rem;
+
+                div{
+                    margin: 0 2rem 0 2rem;
+                }
+
+                img{
+                    align-self:start;
+                    width:75%;
+                }
+        }
+
+        .dBeneficio2{
+            display:grid;
+            gap:0.3rem;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:  
+                "textoDB2" 
+                "imgDB2";
+            margin-top: 0rem;
+
+                div{
+                    margin: 0 2rem 0 2rem;
+                }
+
+                img{
+                    align-self:start;
+                    width:75%;
+                }
+
+        }
+
+        .dBeneficio3{
+            display:grid;
+            gap:0.3rem;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:  
+                "textoDB3" 
+                "imgDB3";
+            margin-top: 0rem;
+
+                div{
+                margin: 0 2rem 0 2rem;
+                }
+
+                img{
+                    align-self:start;
+                    width:75%;
+                }
+        }
+}
+
+    /*Section características*/
+    .caract{
+    display:grid;
+    gap:0.3rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "cTitulo cTitulo"
+        "c1 c2"
+        "c3 c4"
+        "c5 c6";
+}
+
+    /*Footer*/
+    footer{
+        display:grid;
+        gap:0.3rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "redes"
+            "navFooter"
+            "direccion"
+            "logoFooter";
+
+            .redes{
+                ul{
+                    font-size:0.9rem;
+                    padding-left:0;
+                }
+            }
+
+            nav{
+                ul{
+                    font-size:0.9rem;
+                    padding-left:0;
+                }
+            }
+
+            .logoFooter{
+                width:40%;
+                justify-self: center;
+            }
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    /*Header*/
+    header{
+        nav{
+            ul{
+            font-size: 0.7rem;
+            padding-left:0;
+            }
+    }
+    }
+
+    /* Section intro + carrusel*/
+    .intro{
+        .textoIntro{
+        h1{
+            font-size:2.7rem;
+        }
+    }
+    }
+
+    /*Section beneficios*/
+    .beneficios{
+        .bTitulo{
+            font-size:2.4rem;
+        }
+    }
+
+    /*Section caracteristicas*/
+    .caract{
+        .cTitulo{
+            font-size:2.4rem;
+        }
+    }
+    
+    /*Footer*/
+    footer{
+        display:grid;
+        gap:0.3rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0fr 0fr 0fr 0fr;
+        grid-template-areas:
+            "redes"
+            "navFooter"
+            "direccion"
+            "logoFooter";
+
+        .redes{
+            ul{
+                font-size:0.7rem;
+                padding-left:0;
+                margin: 10px auto;
+            }
+        }
+
+        nav{
+            ul{
+            font-size: 0.7rem;
+            padding-left:0;
+            margin:10px auto;
+            }
+        }
+
+        .contacto{
+            font-size:0.8rem;
+            margin-top:1rem;
+            margin-bottom:1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 320px){
+
+    /*Header*/
+    header{
+        nav{
+            ul{
+            font-size: 0.7rem;
+            padding-left:0;
+            }
+    }
+    }
+
+    /* Section intro + carrusel*/
+    .intro{
+        .textoIntro{
+        h1{
+            font-size:2.3rem;
+        }
+    }
+    }
+
+    /*Section beneficios*/
+    .beneficios{
+        .bTitulo{
+            font-size:1.7rem;
+        }
+    }
+
+    /*Section caracteristicas*/
+    .caract{
+        .cTitulo{
+            font-size:1.7rem;
+        }
+    }
+    
+    /*Footer*/
+    footer{
+        display:grid;
+        gap:0.3rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0fr 0fr 0fr 0fr;
+        grid-template-areas:
+            "redes"
+            "navFooter"
+            "direccion"
+            "logoFooter";
+
+        .redes{
+            ul{
+                font-size:0.7rem;
+                padding-left:0;
+                margin: 10px auto;
+            }
+        }
+
+        nav{
+            ul{
+            font-size: 0.7rem;
+            padding-left:0;
+            margin:10px auto;
+            }
+        }
+
+        .contacto{
+            font-size:0.8rem;
+            margin-top:1rem;
+            margin-bottom:1rem;
+        }
+    }
+}

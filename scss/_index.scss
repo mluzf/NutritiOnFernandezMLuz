@@ -1,0 +1,400 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Header*/
+@import "header";
+
+/* Section intro + carrusel*/
+.intro{
+    margin:10px auto;
+    display:grid;
+    gap:0.3rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "textoIntro carrusel";
+    align-items: center;
+    justify-items: center;
+
+        .textoIntro{
+            grid-area: textoIntro;
+            width: 70%;
+            margin: 1rem auto;
+            display:flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            h1{
+                font-family: $fuente1;
+                font-size: 3.2rem;
+                text-align:center;
+            }
+
+            p{
+                font-family: $fuente2;
+                font-size:1rem;
+                text-align:center;
+            }        
+        }
+
+        .carrusel{
+            grid-area:carrusel;
+            width:70%;
+            margin: 2rem auto;
+        }
+}
+
+/*Section beneficios*/
+.beneficios{
+    display:grid;
+    gap:0.3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: 
+        "bTitulo bTitulo bTitulo"
+        "beneficio1 beneficio2 beneficio3";
+    align-items: center;
+    justify-items: center;
+
+    img{
+        width:13%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0.3rem;
+        display: block;
+    }
+
+    .bTitulo{
+        grid-area: bTitulo;
+        font-family: $fuente1;
+        font-size:2.7rem;
+    }
+
+    .beneficio1{
+        grid-area: beneficio1;
+        margin:1rem auto;
+
+        h3{
+            font-family: $fuente1;
+            text-align:center;
+        }
+
+        p{
+            font-family: $fuente2;
+            text-align:center;
+        }
+    }
+
+    .beneficio2{
+        grid-area: beneficio2;
+        margin:1rem auto;
+
+        h3{
+            font-family: $fuente1;
+            text-align:center;
+        }
+
+        p{
+            font-family: $fuente2;
+            text-align:center;
+        }
+    }
+
+    .beneficio3{
+        grid-area: beneficio3;
+        margin:1rem auto;
+
+        h3{
+            font-family: $fuente1;
+            text-align:center;
+        }
+
+        p{
+            font-family: $fuente2;
+            text-align:center;
+        }
+    }
+}
+
+/*Section descripción beneficios*/
+.descBeneficios{
+
+        .dBeneficio1{
+            display:grid;
+            gap:0.3rem;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas:  
+                "textoDB1 imgDB1";
+            align-items: center;
+            justify-items: center;
+            margin-top: 3rem;
+            
+            div{
+                grid-area: textoDB1;
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin:4rem;
+                
+                h3{
+                    font-family: $fuente1;
+                    text-align:center;
+                }
+    
+                p{
+                    font-family: $fuente2;
+                    text-align:center;
+                }
+
+                a{
+                    font-family: $fuente2;
+                    text-decoration: none;
+                    color: white;
+                    background-color: $color_ppal; 
+                    box-shadow: 0 0 5px #686464;
+                    border-radius:2px;
+                    margin:10px;
+                    padding:6px;
+
+                    &:hover {
+                        color: $color_hover;
+                        text-decoration: none; 
+                    }
+                }
+            }
+
+            img{
+                grid-area: imgDB1;
+                width: 80%;
+            }
+        }
+
+        .dBeneficio2{
+            display:grid;
+            gap:0.3rem;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas:  
+                "imgDB2 textoDB2";
+            align-items: center;
+            justify-items: center;
+            margin-top: 2rem;
+            
+            div{
+                grid-area: textoDB2;
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin:4rem;
+                
+                h3{
+                    font-family: $fuente1;
+                    text-align:center;
+                }
+    
+                p{
+                    font-family: $fuente2;
+                    text-align:center;
+                }
+
+                a{
+                    font-family: $fuente2;
+                    text-decoration: none;
+                    color: white;
+                    background-color: $color_ppal; 
+                    box-shadow: 0 0 5px #686464;
+                    border-radius:2px;
+                    margin:10px;
+                    padding:6px;
+
+                    &:hover {
+                        color: $color_hover;
+                        text-decoration: none; 
+                    }
+                }
+            }
+
+            img{
+                grid-area: imgDB2;
+                width: 80%;
+            }
+        }
+
+        .dBeneficio3{
+            display:grid;
+            gap:0.3rem;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas:  
+                "textoDB3 imgDB3";
+            align-items: center;
+            justify-items: center;
+            margin-top: 2rem;
+            
+            div{
+                grid-area: textoDB3;
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin:4rem;
+                
+                h3{
+                    font-family: $fuente1;
+                    text-align:center;
+                }
+    
+                p{
+                    font-family: $fuente2;
+                    text-align:center;
+                }
+
+                a{
+                    font-family: $fuente2;
+                    text-decoration: none;
+                    color: white;
+                    background-color: $color_ppal; 
+                    box-shadow: 0 0 5px #686464;
+                    border-radius:2px;
+                    margin:10px;
+                    padding:6px; 
+
+                    &:hover {
+                        color: $color_hover;
+                        text-decoration: none; 
+                    }
+                }
+            }
+
+            img{
+                grid-area: imgDB3;
+                width: 80%;
+            }
+        }
+}
+
+/*Section características*/
+.caract{
+    display:grid;
+    gap:0.3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-areas: 
+        "cTitulo cTitulo cTitulo"
+        "c1 c2 c3"
+        "c4 c5 c6";
+    align-items: center;
+    justify-items: center;
+
+    .cTitulo{
+        grid-area: cTitulo;
+        font-family: 'Rufina', serif;
+        font-size:2.7rem;
+    }
+
+    .c1{
+        grid-area: c1;
+        margin:1rem;
+
+        h3{
+            font-family: $fuente1;
+            text-align:center;
+        }
+
+        p{
+            font-family: $fuente2;
+            text-align:center;
+        }
+    }
+
+    .c2{
+        grid-area: c2;
+        margin:1rem;
+
+        h3{
+            font-family: $fuente1;
+            text-align:center;
+        }
+
+        p{
+            font-family: $fuente2;
+            text-align:center;
+        }
+    }
+
+    .c3{
+        grid-area: c3;
+        margin:1rem;
+
+        h3{
+            font-family: $fuente1;
+            text-align:center;
+        }
+
+        p{
+            font-family: $fuente2;
+            text-align:center;
+        }
+    }
+
+    .c4{
+        grid-area: c4;
+        margin:1rem;
+
+        h3{
+            font-family: $fuente1;
+            text-align:center;
+        }
+
+        p{
+            font-family: $fuente2;
+            text-align:center;
+        }
+    }
+
+    .c5{
+        grid-area: c5;
+        margin:1rem;
+
+        h3{
+            font-family: $fuente1;
+            text-align:center;
+        }
+
+        p{
+            font-family: $fuente2;
+            text-align:center;
+        }
+    }
+
+    .c6{
+        grid-area: c6;
+        margin:1rem;
+
+        h3{
+            font-family: $fuente1;
+            text-align:center;
+        }
+
+        p{
+            font-family: $fuente2;
+            text-align:center;
+        }
+    }
+}
+
+/*Footer & responsive*/
+@import "footer";
+@import "responsive";

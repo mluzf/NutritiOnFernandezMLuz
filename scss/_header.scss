@@ -1,0 +1,76 @@
+header {
+    display:grid;
+    gap:0.3rem;
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: 
+        "logo iniciar"
+        "logo nav";
+    box-shadow: 0 0 20px #686464;
+
+    .logo{
+        grid-area: logo;
+        align-self: center;
+
+        img{
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            width:95%;
+        }
+    }
+
+    .iniciar{
+        grid-area: iniciar;
+        justify-self: end;
+        align-self: center;
+        padding: 1rem;
+        font-family: $fuente2;
+
+        a{
+            text-decoration: none;
+            color: black;
+
+            &:hover {
+                color: $color_hover;
+                text-decoration: none; 
+            }
+
+        }
+    }
+
+    nav {
+        grid-area: nav;
+            
+        ul {
+            border: solid $color_ppal 1px;
+            border-radius: 5px;
+            text-align: center;
+            width: 90%;
+            margin: 20px auto;
+            font-weight: bold;
+            font-family: $fuente2;
+            font-size:1rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            li {
+                display: inline-block;
+                margin: 5px;
+                padding: 5px;
+                list-style-type: none; 
+                    
+                a {
+                    text-decoration: none;
+                    color: black; 
+
+                    &:hover {
+                        color: $color_hover;
+                        text-decoration: none; 
+                    }
+                }
+            }
+        }
+    }       
+}

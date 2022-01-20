@@ -1,0 +1,554 @@
+@charset "UTF-8";
+/*VARS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*Header*/
+header {
+  display: grid;
+  gap: 0.3rem;
+  grid-template-columns: 2fr 5fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas: "logo iniciar" "logo nav";
+  box-shadow: 0 0 20px #686464; }
+  header .logo {
+    grid-area: logo;
+    align-self: center; }
+    header .logo img {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      width: 95%; }
+  header .iniciar {
+    grid-area: iniciar;
+    justify-self: end;
+    align-self: center;
+    padding: 1rem;
+    font-family: "Raleway", sans-serif; }
+    header .iniciar a {
+      text-decoration: none;
+      color: black; }
+      header .iniciar a:hover {
+        color: #cefc85;
+        text-decoration: none; }
+  header nav {
+    grid-area: nav; }
+    header nav ul {
+      border: solid #FF5757 1px;
+      border-radius: 5px;
+      text-align: center;
+      width: 90%;
+      margin: 20px auto;
+      font-weight: bold;
+      font-family: "Raleway", sans-serif;
+      font-size: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      header nav ul li {
+        display: inline-block;
+        margin: 5px;
+        padding: 5px;
+        list-style-type: none; }
+        header nav ul li a {
+          text-decoration: none;
+          color: black; }
+          header nav ul li a:hover {
+            color: #cefc85;
+            text-decoration: none; }
+
+/* Section intro + carrusel*/
+.intro {
+  margin: 10px auto;
+  display: grid;
+  gap: 0.3rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "textoIntro carrusel";
+  align-items: center;
+  justify-items: center; }
+  .intro .textoIntro {
+    grid-area: textoIntro;
+    width: 70%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .intro .textoIntro h1 {
+      font-family: "Rufina", serif;
+      font-size: 3.2rem;
+      text-align: center; }
+    .intro .textoIntro p {
+      font-family: "Raleway", sans-serif;
+      font-size: 1rem;
+      text-align: center; }
+  .intro .carrusel {
+    grid-area: carrusel;
+    width: 70%;
+    margin: 2rem auto; }
+
+/*Section beneficios*/
+.beneficios {
+  display: grid;
+  gap: 0.3rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas: "bTitulo bTitulo bTitulo" "beneficio1 beneficio2 beneficio3";
+  align-items: center;
+  justify-items: center; }
+  .beneficios img {
+    width: 13%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.3rem;
+    display: block; }
+  .beneficios .bTitulo {
+    grid-area: bTitulo;
+    font-family: "Rufina", serif;
+    font-size: 2.7rem; }
+  .beneficios .beneficio1 {
+    grid-area: beneficio1;
+    margin: 1rem auto; }
+    .beneficios .beneficio1 h3 {
+      font-family: "Rufina", serif;
+      text-align: center; }
+    .beneficios .beneficio1 p {
+      font-family: "Raleway", sans-serif;
+      text-align: center; }
+  .beneficios .beneficio2 {
+    grid-area: beneficio2;
+    margin: 1rem auto; }
+    .beneficios .beneficio2 h3 {
+      font-family: "Rufina", serif;
+      text-align: center; }
+    .beneficios .beneficio2 p {
+      font-family: "Raleway", sans-serif;
+      text-align: center; }
+  .beneficios .beneficio3 {
+    grid-area: beneficio3;
+    margin: 1rem auto; }
+    .beneficios .beneficio3 h3 {
+      font-family: "Rufina", serif;
+      text-align: center; }
+    .beneficios .beneficio3 p {
+      font-family: "Raleway", sans-serif;
+      text-align: center; }
+
+/*Section descripción beneficios*/
+.descBeneficios .dBeneficio1 {
+  display: grid;
+  gap: 0.3rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "textoDB1 imgDB1";
+  align-items: center;
+  justify-items: center;
+  margin-top: 3rem; }
+  .descBeneficios .dBeneficio1 div {
+    grid-area: textoDB1;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem; }
+    .descBeneficios .dBeneficio1 div h3 {
+      font-family: "Rufina", serif;
+      text-align: center; }
+    .descBeneficios .dBeneficio1 div p {
+      font-family: "Raleway", sans-serif;
+      text-align: center; }
+    .descBeneficios .dBeneficio1 div a {
+      font-family: "Raleway", sans-serif;
+      text-decoration: none;
+      color: white;
+      background-color: #FF5757;
+      box-shadow: 0 0 5px #686464;
+      border-radius: 2px;
+      margin: 10px;
+      padding: 6px; }
+      .descBeneficios .dBeneficio1 div a:hover {
+        color: #cefc85;
+        text-decoration: none; }
+  .descBeneficios .dBeneficio1 img {
+    grid-area: imgDB1;
+    width: 80%; }
+
+.descBeneficios .dBeneficio2 {
+  display: grid;
+  gap: 0.3rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "imgDB2 textoDB2";
+  align-items: center;
+  justify-items: center;
+  margin-top: 2rem; }
+  .descBeneficios .dBeneficio2 div {
+    grid-area: textoDB2;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem; }
+    .descBeneficios .dBeneficio2 div h3 {
+      font-family: "Rufina", serif;
+      text-align: center; }
+    .descBeneficios .dBeneficio2 div p {
+      font-family: "Raleway", sans-serif;
+      text-align: center; }
+    .descBeneficios .dBeneficio2 div a {
+      font-family: "Raleway", sans-serif;
+      text-decoration: none;
+      color: white;
+      background-color: #FF5757;
+      box-shadow: 0 0 5px #686464;
+      border-radius: 2px;
+      margin: 10px;
+      padding: 6px; }
+      .descBeneficios .dBeneficio2 div a:hover {
+        color: #cefc85;
+        text-decoration: none; }
+  .descBeneficios .dBeneficio2 img {
+    grid-area: imgDB2;
+    width: 80%; }
+
+.descBeneficios .dBeneficio3 {
+  display: grid;
+  gap: 0.3rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "textoDB3 imgDB3";
+  align-items: center;
+  justify-items: center;
+  margin-top: 2rem; }
+  .descBeneficios .dBeneficio3 div {
+    grid-area: textoDB3;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem; }
+    .descBeneficios .dBeneficio3 div h3 {
+      font-family: "Rufina", serif;
+      text-align: center; }
+    .descBeneficios .dBeneficio3 div p {
+      font-family: "Raleway", sans-serif;
+      text-align: center; }
+    .descBeneficios .dBeneficio3 div a {
+      font-family: "Raleway", sans-serif;
+      text-decoration: none;
+      color: white;
+      background-color: #FF5757;
+      box-shadow: 0 0 5px #686464;
+      border-radius: 2px;
+      margin: 10px;
+      padding: 6px; }
+      .descBeneficios .dBeneficio3 div a:hover {
+        color: #cefc85;
+        text-decoration: none; }
+  .descBeneficios .dBeneficio3 img {
+    grid-area: imgDB3;
+    width: 80%; }
+
+/*Section características*/
+.caract {
+  display: grid;
+  gap: 0.3rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr;
+  grid-template-areas: "cTitulo cTitulo cTitulo" "c1 c2 c3" "c4 c5 c6";
+  align-items: center;
+  justify-items: center; }
+  .caract .cTitulo {
+    grid-area: cTitulo;
+    font-family: 'Rufina', serif;
+    font-size: 2.7rem; }
+  .caract .c1 {
+    grid-area: c1;
+    margin: 1rem; }
+    .caract .c1 h3 {
+      font-family: "Rufina", serif;
+      text-align: center; }
+    .caract .c1 p {
+      font-family: "Raleway", sans-serif;
+      text-align: center; }
+  .caract .c2 {
+    grid-area: c2;
+    margin: 1rem; }
+    .caract .c2 h3 {
+      font-family: "Rufina", serif;
+      text-align: center; }
+    .caract .c2 p {
+      font-family: "Raleway", sans-serif;
+      text-align: center; }
+  .caract .c3 {
+    grid-area: c3;
+    margin: 1rem; }
+    .caract .c3 h3 {
+      font-family: "Rufina", serif;
+      text-align: center; }
+    .caract .c3 p {
+      font-family: "Raleway", sans-serif;
+      text-align: center; }
+  .caract .c4 {
+    grid-area: c4;
+    margin: 1rem; }
+    .caract .c4 h3 {
+      font-family: "Rufina", serif;
+      text-align: center; }
+    .caract .c4 p {
+      font-family: "Raleway", sans-serif;
+      text-align: center; }
+  .caract .c5 {
+    grid-area: c5;
+    margin: 1rem; }
+    .caract .c5 h3 {
+      font-family: "Rufina", serif;
+      text-align: center; }
+    .caract .c5 p {
+      font-family: "Raleway", sans-serif;
+      text-align: center; }
+  .caract .c6 {
+    grid-area: c6;
+    margin: 1rem; }
+    .caract .c6 h3 {
+      font-family: "Rufina", serif;
+      text-align: center; }
+    .caract .c6 p {
+      font-family: "Raleway", sans-serif;
+      text-align: center; }
+
+/*Footer & responsive*/
+footer {
+  display: grid;
+  gap: 0.3rem;
+  grid-template-columns: 2fr 5fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "logoFooter redes" "direccion navFooter"; }
+  footer .logoFooter {
+    grid-area: logoFooter;
+    align-self: center; }
+    footer .logoFooter img {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      width: 65%; }
+  footer .contacto {
+    grid-area: direccion;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    text-align: center; }
+  footer .redes {
+    grid-area: redes; }
+    footer .redes h3 {
+      font-family: "Rufina", serif;
+      text-align: center; }
+    footer .redes ul {
+      text-align: center;
+      width: 90%;
+      margin: 20px auto;
+      font-weight: bold;
+      font-family: "Raleway", sans-serif;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      footer .redes ul li {
+        display: inline-block;
+        margin: 5px;
+        padding: 5px;
+        list-style-type: none; }
+        footer .redes ul li a {
+          text-decoration: none;
+          color: black; }
+          footer .redes ul li a:hover {
+            color: #cefc85;
+            text-decoration: none; }
+  footer nav {
+    grid-area: navFooter; }
+    footer nav ul {
+      border: solid #FF5757 1px;
+      border-radius: 5px;
+      text-align: center;
+      width: 90%;
+      margin: 20px auto;
+      font-weight: bold;
+      font-family: "Raleway", sans-serif;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      footer nav ul li {
+        display: inline-block;
+        margin: 5px;
+        padding: 5px;
+        list-style-type: none; }
+        footer nav ul li a {
+          text-decoration: none;
+          color: black; }
+          footer nav ul li a:hover {
+            color: #cefc85;
+            text-decoration: none; }
+
+@media screen and (max-width: 600px) {
+  /*Header*/
+  header {
+    display: grid;
+    gap: 0.3rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 0fr;
+    grid-template-areas: "logo" "nav" "iniciar"; }
+    header nav ul {
+      font-size: 0.9rem;
+      padding-left: 0; }
+    header .logo img {
+      width: 55%; }
+    header .iniciar {
+      justify-self: center; }
+  /* Section intro + carrusel*/
+  .intro {
+    display: grid;
+    gap: 0.3rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "textoIntro" "carrusel"; }
+  /*Section beneficios*/
+  .beneficios {
+    display: grid;
+    gap: 0.3rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0fr 1fr 1fr 1fr;
+    grid-template-areas: "bTitulo" "beneficio1"  "beneficio2"  "beneficio3"; }
+  /*Section descripción beneficios*/
+  .descBeneficios .dBeneficio1 {
+    display: grid;
+    gap: 0.3rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "textoDB1"  "imgDB1";
+    margin-top: 1rem; }
+    .descBeneficios .dBeneficio1 div {
+      margin: 0 2rem 0 2rem; }
+    .descBeneficios .dBeneficio1 img {
+      align-self: start;
+      width: 75%; }
+  .descBeneficios .dBeneficio2 {
+    display: grid;
+    gap: 0.3rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "textoDB2"  "imgDB2";
+    margin-top: 0rem; }
+    .descBeneficios .dBeneficio2 div {
+      margin: 0 2rem 0 2rem; }
+    .descBeneficios .dBeneficio2 img {
+      align-self: start;
+      width: 75%; }
+  .descBeneficios .dBeneficio3 {
+    display: grid;
+    gap: 0.3rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "textoDB3"  "imgDB3";
+    margin-top: 0rem; }
+    .descBeneficios .dBeneficio3 div {
+      margin: 0 2rem 0 2rem; }
+    .descBeneficios .dBeneficio3 img {
+      align-self: start;
+      width: 75%; }
+  /*Section características*/
+  .caract {
+    display: grid;
+    gap: 0.3rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0fr 1fr 1fr 1fr;
+    grid-template-areas: "cTitulo cTitulo" "c1 c2" "c3 c4" "c5 c6"; }
+  /*Footer*/
+  footer {
+    display: grid;
+    gap: 0.3rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "redes" "navFooter" "direccion" "logoFooter"; }
+    footer .redes ul {
+      font-size: 0.9rem;
+      padding-left: 0; }
+    footer nav ul {
+      font-size: 0.9rem;
+      padding-left: 0; }
+    footer .logoFooter {
+      width: 40%;
+      justify-self: center; } }
+
+@media screen and (max-width: 480px) {
+  /*Header*/
+  header nav ul {
+    font-size: 0.7rem;
+    padding-left: 0; }
+  /* Section intro + carrusel*/
+  .intro .textoIntro h1 {
+    font-size: 2.7rem; }
+  /*Section beneficios*/
+  .beneficios .bTitulo {
+    font-size: 2.4rem; }
+  /*Section caracteristicas*/
+  .caract .cTitulo {
+    font-size: 2.4rem; }
+  /*Footer*/
+  footer {
+    display: grid;
+    gap: 0.3rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0fr 0fr 0fr 0fr;
+    grid-template-areas: "redes" "navFooter" "direccion" "logoFooter"; }
+    footer .redes ul {
+      font-size: 0.7rem;
+      padding-left: 0;
+      margin: 10px auto; }
+    footer nav ul {
+      font-size: 0.7rem;
+      padding-left: 0;
+      margin: 10px auto; }
+    footer .contacto {
+      font-size: 0.8rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem; } }
+
+@media screen and (max-width: 320px) {
+  /*Header*/
+  header nav ul {
+    font-size: 0.7rem;
+    padding-left: 0; }
+  /* Section intro + carrusel*/
+  .intro .textoIntro h1 {
+    font-size: 2.3rem; }
+  /*Section beneficios*/
+  .beneficios .bTitulo {
+    font-size: 1.7rem; }
+  /*Section caracteristicas*/
+  .caract .cTitulo {
+    font-size: 1.7rem; }
+  /*Footer*/
+  footer {
+    display: grid;
+    gap: 0.3rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0fr 0fr 0fr 0fr;
+    grid-template-areas: "redes" "navFooter" "direccion" "logoFooter"; }
+    footer .redes ul {
+      font-size: 0.7rem;
+      padding-left: 0;
+      margin: 10px auto; }
+    footer nav ul {
+      font-size: 0.7rem;
+      padding-left: 0;
+      margin: 10px auto; }
+    footer .contacto {
+      font-size: 0.8rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem; } }
