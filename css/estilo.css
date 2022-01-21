@@ -508,6 +508,95 @@ footer .contacto p {
 footer .redes h3 {
   font-size: 1.75rem; }
 
+.mainProgramas h1 {
+  font-family: "Rufina", serif;
+  text-align: center;
+  margin: 2rem;
+  font-size: 3.2rem; }
+
+.mainProgramas article {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #686464;
+  width: 80%;
+  padding: 1rem; }
+  .mainProgramas article h3 {
+    font-family: "Rufina", serif;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem; }
+  .mainProgramas article p {
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    width: 70%; }
+  .mainProgramas article .precio {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #FF5757;
+    margin-top: 1.5rem; }
+
+.mainProgramas .nutricion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas: "nTitulo nTitulo" "nBasico nPers";
+  justify-items: center; }
+  .mainProgramas .nutricion .nTitulo {
+    grid-area: nTitulo;
+    font-family: "Rufina", serif;
+    text-align: center;
+    margin: 2rem;
+    font-size: 2.7rem; }
+  .mainProgramas .nutricion .nBasico {
+    grid-area: nBasico; }
+  .mainProgramas .nutricion .nPers {
+    grid-area: nPers; }
+    .mainProgramas .nutricion .nPers p {
+      width: 99%; }
+
+.mainProgramas .entrenamiento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas: "eTitulo eTitulo" "eBasico ePers";
+  justify-items: center; }
+  .mainProgramas .entrenamiento .eTitulo {
+    grid-area: eTitulo;
+    font-family: "Rufina", serif;
+    text-align: center;
+    margin: 2rem;
+    font-size: 2.7rem; }
+  .mainProgramas .entrenamiento .eBasico {
+    grid-area: eBasico; }
+  .mainProgramas .entrenamiento .ePers {
+    grid-area: ePers; }
+    .mainProgramas .entrenamiento .ePers p {
+      width: 80%; }
+
+.mainProgramas .combinado {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas: "cbTitulo cbTitulo" "cbBasico cbPers";
+  justify-items: center; }
+  .mainProgramas .combinado .cbTitulo {
+    grid-area: cbTitulo;
+    font-family: "Rufina", serif;
+    text-align: center;
+    margin: 2rem;
+    font-size: 2.7rem; }
+  .mainProgramas .combinado .cbBasico {
+    grid-area: cbBasico; }
+  .mainProgramas .combinado .cbPers {
+    grid-area: cbPers; }
+    .mainProgramas .combinado .cbPers p {
+      width: 75%; }
+
 /*<600px*/
 @media screen and (max-width: 600px) {
   /*Header*/
@@ -601,7 +690,23 @@ footer .redes h3 {
     grid-template-areas: "cTitulo cTitulo" "c1 c2" "c3 c4" "c5 c6"; }
   /*SOBRENOS*/
   .quienesSomos img {
-    width: 60%; } }
+    width: 60%; }
+  /*PROGRAMAS*/
+  .mainProgramas .nutricion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0fr 1fr;
+    grid-template-areas: "nTitulo nTitulo" "nBasico nPers"; }
+  .mainProgramas .entrenamiento {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0fr 1fr;
+    grid-template-areas: "eTitulo eTitulo" "eBasico ePers"; }
+  .mainProgramas .combinado {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0fr 1fr;
+    grid-template-areas: "cbTitulo cbTitulo" "cbBasico cbPers"; } }
 
 /*<480px*/
 @media screen and (max-width: 480px) {
@@ -647,7 +752,33 @@ footer .redes h3 {
     font-size: 2.4rem; }
   /*Objetivo*/
   .objetivo h2 {
-    font-size: 2.4rem; } }
+    font-size: 2.4rem; }
+  /*PROGRAMAS*/
+  .mainProgramas .nutricion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0fr 1fr 1fr;
+    grid-template-areas: "nTitulo" "nBasico"  "nPers"; }
+    .mainProgramas .nutricion .nTitulo {
+      font-size: 2.4rem; }
+  .mainProgramas .entrenamiento {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0fr 1fr 1fr;
+    grid-template-areas: "eTitulo" "eBasico" "ePers"; }
+    .mainProgramas .entrenamiento .eTitulo {
+      font-size: 2.4rem; }
+  .mainProgramas .combinado {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0fr 1fr 1fr;
+    grid-template-areas: "cbTitulo" "cbBasico" "cbPers"; }
+    .mainProgramas .combinado .cbTitulo {
+      font-size: 2.4rem; }
+  .mainProgramas article {
+    margin: 1rem; }
+  .mainProgramas h1 {
+    font-size: 2.7rem; } }
 
 /*<320px*/
 @media screen and (max-width: 320px) {
@@ -715,4 +846,13 @@ footer .redes h3 {
   .objetivo p {
     font-size: 1rem; }
   .objetivo a {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  /*PROGRAMAS*/
+  .mainProgramas h1 {
+    font-size: 2.3rem; }
+  .mainProgramas .nutricion .nTitulo {
+    font-size: 1.2rem; }
+  .mainProgramas .entrenamiento .eTitulo {
+    font-size: 1.2rem; }
+  .mainProgramas .combinado .cbTitulo {
+    font-size: 1.2rem; } }

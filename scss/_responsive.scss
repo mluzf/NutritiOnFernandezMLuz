@@ -171,7 +171,39 @@
             width:60%;
         }
     }
+
+/*PROGRAMAS*/
+    .mainProgramas{
+        
+        .nutricion{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0fr 1fr;
+            grid-template-areas: 
+                "nTitulo nTitulo"
+                "nBasico nPers";
+        }
+
+        .entrenamiento{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0fr 1fr;
+        grid-template-areas: 
+            "eTitulo eTitulo"
+            "eBasico ePers";
+        }
+
+        .combinado{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0fr 1fr;
+            grid-template-areas: 
+                "cbTitulo cbTitulo"
+                "cbBasico cbPers";
+        }
+    }
 }
+
 
 /*<480px*/
 @media screen and (max-width: 480px){
@@ -266,6 +298,60 @@
             font-size:2.4rem;
         }
     }
+
+/*PROGRAMAS*/
+    .mainProgramas{
+        
+        .nutricion{
+            display:grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0fr 1fr 1fr;
+            grid-template-areas: 
+                "nTitulo"
+                "nBasico" 
+                "nPers";
+
+            .nTitulo{
+                font-size:2.4rem;
+            }
+        }
+
+        .entrenamiento{
+            display:grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0fr 1fr 1fr;
+            grid-template-areas: 
+                "eTitulo"
+                "eBasico"
+                "ePers";
+
+            .eTitulo{
+                font-size:2.4rem;
+            }
+        }
+
+        .combinado{
+            display:grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0fr 1fr 1fr;
+            grid-template-areas: 
+                "cbTitulo"
+                "cbBasico"
+                "cbPers";
+        
+            .cbTitulo{
+                font-size:2.4rem;
+            }
+        }
+
+        article{
+            margin: 1rem;
+        }
+
+        h1{
+            font-size:2.7rem;
+        }
+    }       
 }
 
 /*<320px*/
@@ -394,6 +480,31 @@
 
         a{
             font-size:1rem;
+        }
+    }
+
+/*PROGRAMAS*/
+    .mainProgramas{
+        h1{
+            font-size:2.3rem;
+        }
+
+        .nutricion{
+            .nTitulo{
+                font-size:1.2rem;
+            }
+        }
+
+        .entrenamiento{
+            .eTitulo{
+                font-size:1.2rem;
+            }
+        }
+
+        .combinado{
+            .cbTitulo{
+                font-size:1.2rem;
+            }
         }
     }
 }

@@ -1,0 +1,132 @@
+.mainProgramas{
+    
+    h1{
+        font-family: $fuente1;
+        text-align: center;
+        margin: 2rem;
+        font-size: 3.2rem;
+    }
+
+    article{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        border-radius: 5px;
+        box-shadow: 0 0 10px #686464;
+        width: 80%;
+        padding:1rem;
+
+        h3{
+            font-family: $fuente1;
+            text-align: center;
+            margin-bottom:1.5rem;
+            margin-top:1.5rem;
+        }
+
+        p{
+            font-family: $fuente2;
+            text-align: center;
+            width: 70%;
+        }
+
+        .precio{
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: $color_ppal;
+            margin-top: 1.5rem;
+        }
+    }
+
+    .nutricion{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas: 
+            "nTitulo nTitulo"
+            "nBasico nPers";
+        justify-items: center;
+
+        .nTitulo{
+            grid-area: nTitulo;
+            font-family: $fuente1;
+            text-align: center;
+            margin: 2rem;
+            font-size: 2.7rem;
+        }
+
+        .nBasico{
+            grid-area: nBasico;
+        }
+
+        .nPers{
+            grid-area: nPers;
+
+            p{ 
+                width: 99%;
+            }
+        }
+    }
+
+    .entrenamiento{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas: 
+            "eTitulo eTitulo"
+            "eBasico ePers";
+        justify-items: center;
+
+        .eTitulo{
+            grid-area: eTitulo;
+            font-family: $fuente1;
+            text-align: center;
+            margin: 2rem;
+            font-size: 2.7rem;
+        }
+
+        .eBasico{
+            grid-area: eBasico;
+        }
+
+        .ePers{
+            grid-area: ePers;
+
+            p{ 
+                width: 80%;
+            }
+        }
+    }
+
+    .combinado{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas: 
+            "cbTitulo cbTitulo"
+            "cbBasico cbPers";
+        justify-items: center;
+
+        .cbTitulo{
+            grid-area: cbTitulo;
+            font-family: $fuente1;
+            text-align: center;
+            margin: 2rem;
+            font-size: 2.7rem;
+        }
+
+        .cbBasico{
+            grid-area: cbBasico;
+        }
+
+        .cbPers{
+            grid-area: cbPers;
+
+            p{ 
+                width: 75%;
+            }
+        }
+    }
+}
