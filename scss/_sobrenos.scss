@@ -1,0 +1,149 @@
+/*Quienes somos*/
+.quienesSomos{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    margin: 3rem;
+
+    h2{
+        font-family: $fuente1;
+        font-size: 3.2rem;
+    }
+
+    p{
+        font-family: $fuente2;
+        margin-top: 1rem;
+    }
+
+    img{
+        width:40%;
+        margin-top: 1rem;
+        border-radius: 20px;
+    }
+}
+
+/*Equipo*/
+.equipo{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0fr 1fr;
+    grid-template-areas: 
+        "eTitulo eTitulo"
+        "equipo1 equipo2";
+    justify-items: center;
+    margin-bottom: 2rem;
+
+    h2{
+        font-family: $fuente1;
+        grid-area: eTitulo;
+        margin: 1rem;
+        font-size:2.7rem;
+    }
+
+    .equipo1{
+        grid-area: equipo1;
+        border: 1px solid black;
+        border-radius: 5px;
+        box-shadow: 0 0 10px #686464;
+
+        h3{
+            text-align: center;
+            font-family: $fuente1;
+            margin: 1rem;
+        }
+
+        p{
+            text-align: center;
+            font-family: $fuente2;
+            margin: 1rem;
+        }
+        
+    }
+
+    .equipo2{
+        grid-area:equipo2;
+        border: 1px solid black;
+        border-radius: 5px;
+        box-shadow: 0 0 10px #686464;
+
+        h3{
+            text-align: center;
+            font-family: $fuente1;
+            margin:1rem;
+        }
+
+        p{
+            text-align: center;
+            font-family: $fuente2;
+            margin: 1rem;
+        }
+    }
+}
+
+.imgRedonda{
+    width:200px;
+    height:200px;
+    border-radius:150px;
+    margin: 1rem;
+}
+
+/*Objetivo*/
+.objetivo{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+
+    h2{
+        font-family: $fuente1;
+        font-size: 2.7rem;
+        margin:1rem;
+    }
+
+    p{
+        font-family: $fuente2;
+        width:55%;
+        margin: 2rem;
+        text-align: center;
+        font-size:1.3rem;
+    }
+
+    a{
+        font-family: $fuente2;
+        text-decoration: none;
+        color: white;
+        background-color: $color_ppal; 
+        box-shadow: 0 0 5px #686464;
+        border-radius:2px;
+        margin-bottom:2rem;
+        margin-top:1rem;
+        padding:12px; 
+        font-size: 1.3rem;
+
+            &:hover {
+                color: $color_hover;
+                text-decoration: none; 
+            }
+    }
+}
+
+/*Modificaciones footer*/
+footer{
+
+    .contacto{
+
+        p{
+            margin-bottom: 1rem;
+        }
+    }
+
+    .redes{
+
+        h3{
+            font-size: 1.75rem;
+        }
+    }
+}

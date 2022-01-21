@@ -14,35 +14,33 @@
     <meta name="description" content="Consultorio online de nutrición saludable. Enseñamos a mejorar la alimentación con planes personalizados.">
     <meta name="keywords" content="nutricion, alimentacion, saludable, comida, dieta, salud, alimentos, alimento, nutricionista">
 
-    <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
     <!--Link CSS-->
     <link rel="stylesheet" href="../css/estilo.css">
 
     <!--Favicon-->
     <link rel="shortcut icon" href="../imagenes/favicon.ico">
 
-    <title>NutritiOn</title>
+    <title>Sobre Nosotros | NutritiOn</title>
 
 </head>
 
 <body>
     <header>
-
         <!--Click en logo para ir a página de Inicio-->
+        <div class="logo">
         <a href="../index.html" id="top" class="logo"><img src="../imagenes/logo.png" width="300px" alt="logo"></a>
+        </div>
 
-        <div>
-            <a href="./pages/iniciar.html" class=""> Inicia sesión </a>
+        <div class="iniciar">
+            <a href="./iniciar.html" class=""> Inicia sesión </a>
         </div>
         
         <nav>
             <ul>
                 <li><a href="../index.html" class=""> INICIO </a></li>
-                <li> <a href="./pages/programas.html" class=""> PROGRAMAS </a> </li>
-                <li> <a href="./pages/contacto.html" class=""> CONTACTO </a> </li>
-                <li><a href="./pages/empezar.html" class=""> EMPEZAR AQUÍ </a></li>
+                <li> <a href="./programas.html" class=""> PROGRAMAS </a> </li>
+                <li> <a href="./contacto.html" class=""> CONTACTO </a> </li>
+                <li><a href="./empezar.html" class=""> EMPEZAR AQUÍ </a></li>
             </ul>
         </nav>
     </header>
@@ -53,24 +51,31 @@
         <section class="quienesSomos">
             <h2>¿Quiénes somos?</h2>
             <p>Somos un equipo de profesionales capacitados para ayudarte, con la meta de mejorar el estilo de vida de las personas según sus objetivos</p>
+            <img src="../imagenes/quienessomos.jpg" alt="quienes somos">
         </section>
 
-        <!--Team-->
-        <section class="team">
-            <h2>Team</h2>
+        <hr>
 
-            <article class="prof1">
+        <!--Equipo-->
+        <section class="equipo">
+            <h2>Equipo</h2>
+
+            <article class="equipo1">
                 <h3>María Fernández</h3>
-                <p>Mi objetivo es que te olvides de cualquier tipo de dieta y aprendas a mejorar no solo ty alimentacion sino tu forma de relacionarte con la comida</p>
-                <img src="" alt="">
+                <p>Lic. en Nutrición</p>
+    
+                <img src="../imagenes/team1.jpg" alt="equipo" class="imgRedonda">
             </article>
 
-            <article class="prof2">
+            <article class="equipo2">
                 <h3>Juan Pérez</h3>
-                <p>Quiero que encuentres lo que te gusta hacer, mejorando no solo tu aspecto, postura y fuerza, también logrando que disfrutes de hacer actividad física.</p>
-                <img src="" alt="">
+                <p>Lic. en Educación Física</p>
+    
+                <img src="../imagenes/team2.jpg" alt="equipo" class="imgRedonda">
             </article>
         </section>
+
+        <hr>
 
         <!--Objetivo-->
         <section class="objetivo">
@@ -78,66 +83,48 @@
             <h2>Nuestro principal objetivo</h2>
             <p>Sabemos que existen dificultades que rodean a la alimentación y la actividad física. Además de respetar tu meta, queremos que dejes atrás toda presión y estereotipo, mejorando tu estilo de vida junto a nosotros. Queremos que encuentres en quien confiar, y puedas disfrutar de este proceso.</p>
             
-            <a href="../pages/empezar.html">EMPEZAR AQUÍ</a>
-        </section>
-
-        <!--Que hacemos-->
-        <section class="queHacemos">
-            <h2>¿Qué hacemos?</h2>
-            <p>Teniendo en cuenta tu objetivo creamos un plan que se adapte a lo que necesites, y te brindamos seguimiento mediante consultas. Para eso debes completar una serie de pasos, donde podrás crear una cuenta y guardar todo tu proceso, para que sea de fácil acceso para vos y para nosotros.</p>
-
-            <h3>Pasos a seguir:</h3>
-            <ol>
-                <li>Creá tu cuenta: Al entrar, deberás responder un cuestionario general que nos sirve de guía para luego poder agendar tu primer consulta el día y hora que elijas.</li>
-                <li>Consulta inicial: Puede ser presencial u online. Analizamos características físicas y forma de vida en general.</li>
-                <li>Elegí tu plan: Según las recomendaciones de tu primer consulta, desde tu cuenta vas a poder elegir el programa que más se adapte.</li>
-                <li>Seguimientos: agendá tus consultas cuando vos quieras y necesites.</li>
-                <li>Registro del proceso: Podes ver todos tus avances en tu cuenta. Además podés guardar recetas y detalles que te parezcan importantes.</li>
-                <li>Participá: Lee nuestras guías y asistí a nuestras charlas informativas. Esto es opcional y gratis, pero es de mucha ayuda.</li>
-            </ol>
+            <a href="./empezar.html">EMPEZAR AQUÍ</a>
         </section>
     </main>
 
+    <hr>
+
     <footer>
-        
         <!--Click en logo para ir a página de Inicio-->
-        <a href="../index.html" id="top" class="logo"><img src="../imagenes/logo.png" width="300px" alt="logo"></a>
+        <div class="logoFooter"><a href="../index.html" id="top" class="logo"><img src="../imagenes/logo.png" width="300px" alt="logo"></a>
+        </div>
 
         <!--Contacto-->
-        <div>
+        <div class="contacto">
             <p>Dirección: Calle Sin Nombre 123 - Argentina</p>
             <p>Mail: nutritionbyluz@gmail.com</p>
             <p>Tel.: +123456789</p>
         </div>
 
         <!--Redes sociales-->
-        <div>
+        <div class="redes">
             <h3>Redes sociales</h3>
 
             <ul>
                 <li><a href="http://www.instagram.com" target="_blank">INSTAGRAM</a></li>
                 <li><a href="http://www.facebook.com" target="_blank">FACEBOOK</a></li>
                 <li><a href="http://www.linkedin.com" target="_blank">LINKEDIN</a></li>
-                <li><a href="http://www.linkedin.com" target="_blank">YOUTUBE</a></li>
-                <li><a href="http://www.linkedin.com" target="_blank">TWITTER</a></li>
+                <li><a href="http://www.youtube.com" target="_blank">YOUTUBE</a></li>
+                <li><a href="http://www.twitter.com" target="_blank">TWITTER</a></li>
             </ul>
         </div>
 
         <!--Nav footer-->
         <nav>
             <ul>
-                <li><a href="../index.html" class=""> INICIO </a></li>
-                <li> <a href="./pages/programas.html" class=""> PROGRAMAS </a> </li>
-                <li> <a href="./pages/contacto.html" class=""> CONTACTO </a> </li>
-                <li><a href="./pages/empezar.html" class=""> EMPEZAR AQUÍ </a></li>
+                <li> <a href="../index.html" class="nav1"> INICIO </a> </li>
+                <li> <a href="./programas.html" class="nav2"> PROGRAMAS </a> </li>
+                <li><a href="./contacto.html" class="nav3"> CONTACTO </a></li>
+                <li><a href="./empezar.html" class="nav4"> EMPEZAR AQUÍ </a></li>
             </ul>
         </nav>
-
-        <div>
-            <p>2022 NutritiOn by Luz</p>
-        </div>
-
     </footer>
+
 </body>
 
 </html>

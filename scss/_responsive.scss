@@ -1,3 +1,4 @@
+/*<600px*/
 @media screen and (max-width: 600px){
     
     /*Header*/
@@ -164,6 +165,7 @@
     }
 }
 
+/*<480px*/
 @media screen and (max-width: 480px){
 
     /*Header*/
@@ -235,6 +237,7 @@
     }
 }
 
+/*<320px*/
 @media screen and (max-width: 320px){
 
     /*Header*/
@@ -259,14 +262,14 @@
     /*Section beneficios*/
     .beneficios{
         .bTitulo{
-            font-size:1.7rem;
+            font-size:1.2rem;
         }
     }
 
     /*Section caracteristicas*/
     .caract{
         .cTitulo{
-            font-size:1.7rem;
+            font-size:1.2rem;
         }
     }
     

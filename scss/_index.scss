@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-/*Header*/
-@import "header";
-
 /* Section intro + carrusel*/
 .intro{
     margin:10px auto;
@@ -42,7 +39,7 @@
 
         .carrusel{
             grid-area:carrusel;
-            width:70%;
+            width:90%;
             margin: 2rem auto;
         }
 }
@@ -173,6 +170,7 @@
             img{
                 grid-area: imgDB1;
                 width: 80%;
+                border-radius: 20px;
             }
         }
 
@@ -227,6 +225,7 @@
             img{
                 grid-area: imgDB2;
                 width: 80%;
+                border-radius: 20px;
             }
         }
 
@@ -281,6 +280,7 @@
             img{
                 grid-area: imgDB3;
                 width: 80%;
+                border-radius: 20px;
             }
         }
 }
@@ -394,7 +394,3 @@
         }
     }
 }
-
-/*Footer & responsive*/
-@import "footer";
-@import "responsive";

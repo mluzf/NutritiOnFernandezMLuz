@@ -1,11 +1,5 @@
 @charset "UTF-8";
 /*VARS*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-/*Header*/
 header {
   display: grid;
   gap: 0.3rem;
@@ -59,6 +53,80 @@ header {
             color: #cefc85;
             text-decoration: none; }
 
+footer {
+  display: grid;
+  gap: 0.3rem;
+  grid-template-columns: 2fr 5fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "logoFooter redes" "direccion navFooter"; }
+  footer .logoFooter {
+    grid-area: logoFooter;
+    align-self: center; }
+    footer .logoFooter img {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      width: 65%; }
+  footer .contacto {
+    grid-area: direccion;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    text-align: center; }
+  footer .redes {
+    grid-area: redes; }
+    footer .redes h3 {
+      font-family: "Rufina", serif;
+      text-align: center; }
+    footer .redes ul {
+      text-align: center;
+      width: 90%;
+      margin: 20px auto;
+      font-weight: bold;
+      font-family: "Raleway", sans-serif;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      footer .redes ul li {
+        display: inline-block;
+        margin: 5px;
+        padding: 5px;
+        list-style-type: none; }
+        footer .redes ul li a {
+          text-decoration: none;
+          color: black; }
+          footer .redes ul li a:hover {
+            color: #cefc85;
+            text-decoration: none; }
+  footer nav {
+    grid-area: navFooter; }
+    footer nav ul {
+      border: solid #FF5757 1px;
+      border-radius: 5px;
+      text-align: center;
+      width: 90%;
+      margin: 20px auto;
+      font-weight: bold;
+      font-family: "Raleway", sans-serif;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      footer nav ul li {
+        display: inline-block;
+        margin: 5px;
+        padding: 5px;
+        list-style-type: none; }
+        footer nav ul li a {
+          text-decoration: none;
+          color: black; }
+          footer nav ul li a:hover {
+            color: #cefc85;
+            text-decoration: none; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 /* Section intro + carrusel*/
 .intro {
   margin: 10px auto;
@@ -86,7 +154,7 @@ header {
       text-align: center; }
   .intro .carrusel {
     grid-area: carrusel;
-    width: 70%;
+    width: 90%;
     margin: 2rem auto; }
 
 /*Section beneficios*/
@@ -175,7 +243,8 @@ header {
         text-decoration: none; }
   .descBeneficios .dBeneficio1 img {
     grid-area: imgDB1;
-    width: 80%; }
+    width: 80%;
+    border-radius: 20px; }
 
 .descBeneficios .dBeneficio2 {
   display: grid;
@@ -215,7 +284,8 @@ header {
         text-decoration: none; }
   .descBeneficios .dBeneficio2 img {
     grid-area: imgDB2;
-    width: 80%; }
+    width: 80%;
+    border-radius: 20px; }
 
 .descBeneficios .dBeneficio3 {
   display: grid;
@@ -255,7 +325,8 @@ header {
         text-decoration: none; }
   .descBeneficios .dBeneficio3 img {
     grid-area: imgDB3;
-    width: 80%; }
+    width: 80%;
+    border-radius: 20px; }
 
 /*Section características*/
 .caract {
@@ -325,76 +396,7 @@ header {
       font-family: "Raleway", sans-serif;
       text-align: center; }
 
-/*Footer & responsive*/
-footer {
-  display: grid;
-  gap: 0.3rem;
-  grid-template-columns: 2fr 5fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "logoFooter redes" "direccion navFooter"; }
-  footer .logoFooter {
-    grid-area: logoFooter;
-    align-self: center; }
-    footer .logoFooter img {
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-      width: 65%; }
-  footer .contacto {
-    grid-area: direccion;
-    font-family: "Raleway", sans-serif;
-    font-size: 1rem;
-    text-align: center; }
-  footer .redes {
-    grid-area: redes; }
-    footer .redes h3 {
-      font-family: "Rufina", serif;
-      text-align: center; }
-    footer .redes ul {
-      text-align: center;
-      width: 90%;
-      margin: 20px auto;
-      font-weight: bold;
-      font-family: "Raleway", sans-serif;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around; }
-      footer .redes ul li {
-        display: inline-block;
-        margin: 5px;
-        padding: 5px;
-        list-style-type: none; }
-        footer .redes ul li a {
-          text-decoration: none;
-          color: black; }
-          footer .redes ul li a:hover {
-            color: #cefc85;
-            text-decoration: none; }
-  footer nav {
-    grid-area: navFooter; }
-    footer nav ul {
-      border: solid #FF5757 1px;
-      border-radius: 5px;
-      text-align: center;
-      width: 90%;
-      margin: 20px auto;
-      font-weight: bold;
-      font-family: "Raleway", sans-serif;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around; }
-      footer nav ul li {
-        display: inline-block;
-        margin: 5px;
-        padding: 5px;
-        list-style-type: none; }
-        footer nav ul li a {
-          text-decoration: none;
-          color: black; }
-          footer nav ul li a:hover {
-            color: #cefc85;
-            text-decoration: none; }
-
+/*<600px*/
 @media screen and (max-width: 600px) {
   /*Header*/
   header {
@@ -485,6 +487,7 @@ footer {
       width: 40%;
       justify-self: center; } }
 
+/*<480px*/
 @media screen and (max-width: 480px) {
   /*Header*/
   header nav ul {
@@ -519,6 +522,7 @@ footer {
       margin-top: 1rem;
       margin-bottom: 1rem; } }
 
+/*<320px*/
 @media screen and (max-width: 320px) {
   /*Header*/
   header nav ul {
@@ -529,10 +533,10 @@ footer {
     font-size: 2.3rem; }
   /*Section beneficios*/
   .beneficios .bTitulo {
-    font-size: 1.7rem; }
+    font-size: 1.2rem; }
   /*Section caracteristicas*/
   .caract .cTitulo {
-    font-size: 1.7rem; }
+    font-size: 1.2rem; }
   /*Footer*/
   footer {
     display: grid;
@@ -552,3 +556,107 @@ footer {
       font-size: 0.8rem;
       margin-top: 1rem;
       margin-bottom: 1rem; } }
+
+/*Quienes somos*/
+.quienesSomos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  margin: 3rem; }
+  .quienesSomos h2 {
+    font-family: "Rufina", serif;
+    font-size: 3.2rem; }
+  .quienesSomos p {
+    font-family: "Raleway", sans-serif;
+    margin-top: 1rem; }
+  .quienesSomos img {
+    width: 40%;
+    margin-top: 1rem;
+    border-radius: 20px; }
+
+/*Equipo*/
+.equipo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0fr 1fr;
+  grid-template-areas: "eTitulo eTitulo" "equipo1 equipo2";
+  justify-items: center;
+  margin-bottom: 2rem; }
+  .equipo h2 {
+    font-family: "Rufina", serif;
+    grid-area: eTitulo;
+    margin: 1rem;
+    font-size: 2.7rem; }
+  .equipo .equipo1 {
+    grid-area: equipo1;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #686464; }
+    .equipo .equipo1 h3 {
+      text-align: center;
+      font-family: "Rufina", serif;
+      margin: 1rem; }
+    .equipo .equipo1 p {
+      text-align: center;
+      font-family: "Raleway", sans-serif;
+      margin: 1rem; }
+  .equipo .equipo2 {
+    grid-area: equipo2;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #686464; }
+    .equipo .equipo2 h3 {
+      text-align: center;
+      font-family: "Rufina", serif;
+      margin: 1rem; }
+    .equipo .equipo2 p {
+      text-align: center;
+      font-family: "Raleway", sans-serif;
+      margin: 1rem; }
+
+.imgRedonda {
+  width: 200px;
+  height: 200px;
+  border-radius: 150px;
+  margin: 1rem; }
+
+/*Objetivo*/
+.objetivo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center; }
+  .objetivo h2 {
+    font-family: "Rufina", serif;
+    font-size: 2.7rem;
+    margin: 1rem; }
+  .objetivo p {
+    font-family: "Raleway", sans-serif;
+    width: 55%;
+    margin: 2rem;
+    text-align: center;
+    font-size: 1.3rem; }
+  .objetivo a {
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    color: white;
+    background-color: #FF5757;
+    box-shadow: 0 0 5px #686464;
+    border-radius: 2px;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    padding: 12px;
+    font-size: 1.3rem; }
+    .objetivo a:hover {
+      color: #cefc85;
+      text-decoration: none; }
+
+/*Modificaciones footer*/
+footer .contacto p {
+  margin-bottom: 1rem; }
+
+footer .redes h3 {
+  font-size: 1.75rem; }
