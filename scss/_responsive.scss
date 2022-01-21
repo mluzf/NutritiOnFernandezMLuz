@@ -1,7 +1,7 @@
 /*<600px*/
 @media screen and (max-width: 600px){
     
-    /*Header*/
+/*Header*/
     header {
         display:grid;
         gap:0.3rem;
@@ -30,6 +30,39 @@
         }
     }
 
+/*Footer*/
+    footer{
+        display:grid;
+        gap:0.3rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "redes"
+            "navFooter"
+            "direccion"
+            "logoFooter";
+
+            .redes{
+                ul{
+                    font-size:0.9rem;
+                    padding-left:0;
+                }
+            }
+
+            nav{
+                ul{
+                    font-size:0.9rem;
+                    padding-left:0;
+                }
+            }
+
+            .logoFooter{
+                width:40%;
+                justify-self: center;
+            }
+    }
+
+/*INDEX*/
     /* Section intro + carrusel*/
     .intro{
         display:grid;
@@ -95,7 +128,6 @@
                     align-self:start;
                     width:75%;
                 }
-
         }
 
         .dBeneficio3{
@@ -117,7 +149,7 @@
                     width:75%;
                 }
         }
-}
+    }
 
     /*Section características*/
     .caract{
@@ -130,78 +162,31 @@
         "c1 c2"
         "c3 c4"
         "c5 c6";
-}
+    }  
 
-    /*Footer*/
-    footer{
-        display:grid;
-        gap:0.3rem;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-            "redes"
-            "navFooter"
-            "direccion"
-            "logoFooter";
+/*SOBRENOS*/
+    .quienesSomos{
 
-            .redes{
-                ul{
-                    font-size:0.9rem;
-                    padding-left:0;
-                }
-            }
-
-            nav{
-                ul{
-                    font-size:0.9rem;
-                    padding-left:0;
-                }
-            }
-
-            .logoFooter{
-                width:40%;
-                justify-self: center;
-            }
+        img{
+            width:60%;
+        }
     }
 }
 
 /*<480px*/
 @media screen and (max-width: 480px){
 
-    /*Header*/
+/*Header*/
     header{
         nav{
             ul{
             font-size: 0.7rem;
             padding-left:0;
             }
-    }
-    }
-
-    /* Section intro + carrusel*/
-    .intro{
-        .textoIntro{
-        h1{
-            font-size:2.7rem;
-        }
-    }
-    }
-
-    /*Section beneficios*/
-    .beneficios{
-        .bTitulo{
-            font-size:2.4rem;
         }
     }
 
-    /*Section caracteristicas*/
-    .caract{
-        .cTitulo{
-            font-size:2.4rem;
-        }
-    }
-    
-    /*Footer*/
+/*Footer*/
     footer{
         display:grid;
         gap:0.3rem;
@@ -233,6 +218,52 @@
             font-size:0.8rem;
             margin-top:1rem;
             margin-bottom:1rem;
+        }
+    }
+
+/*INDEX*/
+    /* Section intro + carrusel*/
+    .intro{
+        .textoIntro{
+            h1{
+                font-size:2.7rem;
+            }
+        }
+    }
+
+    /*Section beneficios*/
+    .beneficios{
+        .bTitulo{
+            font-size:2.4rem;
+        }
+    }
+
+    /*Section caracteristicas*/
+    .caract{
+        .cTitulo{
+            font-size:2.4rem;
+        }
+    }
+    
+/*SOBRENOS*/
+    /*Quienes somos*/
+    .quienesSomos{
+        h2{
+            font-size:2.7rem;
+        }
+    }
+
+    /*Equipo*/
+    .equipo{   
+        h2{
+            font-size:2.4rem;
+        }
+    }
+
+    /*Objetivo*/
+    .objetivo{
+        h2{
+            font-size:2.4rem;
         }
     }
 }
@@ -240,40 +271,17 @@
 /*<320px*/
 @media screen and (max-width: 320px){
 
-    /*Header*/
+/*Header*/
     header{
         nav{
             ul{
             font-size: 0.7rem;
             padding-left:0;
             }
-    }
-    }
-
-    /* Section intro + carrusel*/
-    .intro{
-        .textoIntro{
-        h1{
-            font-size:2.3rem;
-        }
-    }
-    }
-
-    /*Section beneficios*/
-    .beneficios{
-        .bTitulo{
-            font-size:1.2rem;
         }
     }
 
-    /*Section caracteristicas*/
-    .caract{
-        .cTitulo{
-            font-size:1.2rem;
-        }
-    }
-    
-    /*Footer*/
+/*Footer*/
     footer{
         display:grid;
         gap:0.3rem;
@@ -305,6 +313,87 @@
             font-size:0.8rem;
             margin-top:1rem;
             margin-bottom:1rem;
+        }
+    }
+
+/*INDEX*/
+    /* Section intro + carrusel*/
+    .intro{
+        .textoIntro{
+            h1{
+                font-size:2.3rem;
+            }
+        }
+    }
+
+    /*Section beneficios*/
+    .beneficios{
+        .bTitulo{
+            font-size:1.2rem;
+        }
+    }
+
+    /*Section caracteristicas*/
+    .caract{
+        .cTitulo{
+            font-size:1.2rem;
+        }
+    }
+
+/*SOBRENOS*/
+    /*Quienes somos*/
+    .quienesSomos{
+        h2{
+            font-size:2.3rem;
+        }
+
+        img{
+            width:80%;
+        }
+    }
+
+    /*Equipo*/
+    .equipo{   
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0fr 1fr 1fr;
+        grid-template-areas: 
+            "eTitulo"
+            "equipo1" 
+            "equipo2";
+
+        h2{
+            font-size:1.2rem;
+        }
+
+        article{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            margin:1rem;
+
+            .imgRedonda{
+                width:100px;
+                height:100px;
+            }
+        }
+    }
+
+    /*Objetivo*/
+    .objetivo{
+        h2{
+            font-size:1.2rem;
+        }
+
+        p{
+            font-size:1rem;
+        }
+
+        a{
+            font-size:1rem;
         }
     }
 }

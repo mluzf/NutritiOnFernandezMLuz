@@ -10,11 +10,13 @@
     h2{
         font-family: $fuente1;
         font-size: 3.2rem;
+        text-align: center;
     }
 
     p{
         font-family: $fuente2;
         margin-top: 1rem;
+        text-align: center;
     }
 
     img{
@@ -40,6 +42,13 @@
         grid-area: eTitulo;
         margin: 1rem;
         font-size:2.7rem;
+    }
+
+    article{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
     }
 
     .equipo1{
@@ -101,6 +110,7 @@
         font-family: $fuente1;
         font-size: 2.7rem;
         margin:1rem;
+        text-align: center;
     }
 
     p{
