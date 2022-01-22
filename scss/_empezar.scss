@@ -1,0 +1,22 @@
+.mainEmpezar{
+
+    h2{
+        font-family: $fuente1;
+        text-align: center;
+        margin-top:2rem;
+    }
+
+    p{
+        font-family: $fuente2;
+        text-align: center;
+    }
+
+    .formularioEmpezar{
+        padding:2rem;
+
+        button{
+            background-color: $color_ppal;
+            border: $color_ppal;
+        }     
+    }
+}

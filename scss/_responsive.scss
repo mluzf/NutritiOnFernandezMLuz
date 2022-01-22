@@ -12,22 +12,22 @@
             "nav"
             "iniciar";
 
-        nav{
-            ul{
-            font-size: 0.9rem;
-            padding-left:0;
-            }
-        }
-
         .logo{
             img{
                 width:55%;
             }
         }
-
+        
         .iniciar{
             justify-self:center;
         }
+
+        nav{
+            ul{
+            font-size: 0.9rem;
+            padding-left:0;
+            }
+        }  
     }
 
 /*Footer*/
@@ -35,31 +35,23 @@
         display:grid;
         gap:0.3rem;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas:
             "redes"
-            "navFooter"
             "direccion"
             "logoFooter";
 
-            .redes{
-                ul{
-                    font-size:0.9rem;
-                    padding-left:0;
-                }
-            }
+        .logoFooter{
+            width:40%;
+            justify-self: center;
+        }
 
-            nav{
-                ul{
-                    font-size:0.9rem;
-                    padding-left:0;
-                }
+        .redes{
+            ul{
+                font-size:0.9rem;
+                padding-left:0;
             }
-
-            .logoFooter{
-                width:40%;
-                justify-self: center;
-            }
+        }          
     }
 
 /*INDEX*/
@@ -223,12 +215,17 @@
         display:grid;
         gap:0.3rem;
         grid-template-columns: 1fr;
-        grid-template-rows: 0fr 0fr 0fr 0fr;
+        grid-template-rows: 0fr 0fr 0fr;
         grid-template-areas:
             "redes"
-            "navFooter"
             "direccion"
             "logoFooter";
+
+        .contacto{
+            font-size:0.8rem;
+            margin-top:1rem;
+            margin-bottom:1rem;
+        }
 
         .redes{
             ul{
@@ -236,20 +233,6 @@
                 padding-left:0;
                 margin: 10px auto;
             }
-        }
-
-        nav{
-            ul{
-            font-size: 0.7rem;
-            padding-left:0;
-            margin:10px auto;
-            }
-        }
-
-        .contacto{
-            font-size:0.8rem;
-            margin-top:1rem;
-            margin-bottom:1rem;
         }
     }
 
@@ -267,6 +250,18 @@
     .beneficios{
         .bTitulo{
             font-size:2.4rem;
+        }
+    }
+
+    /*Section descripción beneficios*/
+    .descBeneficios{
+
+        .dBeneficio2{
+            margin-top:2rem;
+        }
+
+        .dBeneficio3{
+            margin-top:2rem;
         }
     }
 
@@ -354,14 +349,14 @@
     }       
 }
 
-/*<320px*/
-@media screen and (max-width: 320px){
+/*<360px*/
+@media screen and (max-width: 360px){
 
 /*Header*/
     header{
         nav{
             ul{
-            font-size: 0.7rem;
+            font-size: 0.5rem;
             padding-left:0;
             }
         }
@@ -372,34 +367,25 @@
         display:grid;
         gap:0.3rem;
         grid-template-columns: 1fr;
-        grid-template-rows: 0fr 0fr 0fr 0fr;
+        grid-template-rows: 0fr 0fr 0fr;
         grid-template-areas:
             "redes"
-            "navFooter"
             "direccion"
             "logoFooter";
-
-        .redes{
-            ul{
-                font-size:0.7rem;
-                padding-left:0;
-                margin: 10px auto;
-            }
-        }
-
-        nav{
-            ul{
-            font-size: 0.7rem;
-            padding-left:0;
-            margin:10px auto;
-            }
-        }
-
+        
         .contacto{
             font-size:0.8rem;
             margin-top:1rem;
             margin-bottom:1rem;
         }
+
+        .redes{
+            ul{
+                font-size:0.5rem;
+                padding-left:0;
+                margin: 10px auto;
+            }
+        }  
     }
 
 /*INDEX*/
@@ -415,14 +401,78 @@
     /*Section beneficios*/
     .beneficios{
         .bTitulo{
-            font-size:1.2rem;
+            font-size:2.2rem;
+        }
+    }
+
+    /*Section descripción beneficios*/
+    .descBeneficios{
+
+        .dBeneficio1{
+            display:grid;
+            gap:0.3rem;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 0fr;
+            grid-template-areas:  
+                "textoDB1" 
+                "imgDB1";
+                margin-top: 1rem;
+
+                div{
+                    margin: 0 2rem 0 2rem;
+                }
+
+                img{
+                    align-self:start;
+                    width:75%;
+                }
+        }
+
+        .dBeneficio2{
+            display:grid;
+            gap:0.3rem;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 0fr;
+            grid-template-areas:  
+                "textoDB2" 
+                "imgDB2";
+            margin-top: 2rem;
+
+                div{
+                    margin: 0 2rem 0 2rem;
+                }
+
+                img{
+                    align-self:start;
+                    width:75%;
+                }
+        }
+
+        .dBeneficio3{
+            display:grid;
+            gap:0.3rem;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 0fr;
+            grid-template-areas:  
+                "textoDB3" 
+                "imgDB3";
+            margin-top: 2rem;
+
+                div{
+                margin: 0 2rem 0 2rem;
+                }
+
+                img{
+                    align-self:start;
+                    width:75%;
+                }
         }
     }
 
     /*Section caracteristicas*/
     .caract{
         .cTitulo{
-            font-size:1.2rem;
+            font-size:1.7rem;
         }
     }
 

@@ -1,0 +1,54 @@
+.mainContacto{
+
+    h1{
+        font-family: $fuente1;
+        text-align: center;
+        margin-top:2rem;
+    }
+
+    h2{
+        font-family: $fuente1;
+        text-align: center;
+    }
+
+    p{
+        font-family: $fuente2;
+        text-align: center;
+    }
+
+    section{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        font-family: $fuente2;
+        text-align: center;
+        margin-top:2rem;
+
+        .formulario{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+
+            div{
+                margin:0.5rem;
+
+                input{
+                    border-radius: 5px;
+                    padding:5px;
+                }
+
+                label{
+                    margin:1rem;
+                }
+            }
+        }
+
+        .boton{
+            margin-bottom:1rem;
+        }
+    }
+}

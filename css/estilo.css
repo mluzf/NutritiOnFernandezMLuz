@@ -58,7 +58,7 @@ footer {
   gap: 0.3rem;
   grid-template-columns: 2fr 5fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "logoFooter redes" "direccion navFooter"; }
+  grid-template-areas: "logoFooter redes" "direccion redes"; }
   footer .logoFooter {
     grid-area: logoFooter;
     align-self: center; }
@@ -73,7 +73,8 @@ footer {
     font-size: 1rem;
     text-align: center; }
   footer .redes {
-    grid-area: redes; }
+    grid-area: redes;
+    align-self: center; }
     footer .redes h3 {
       font-family: "Rufina", serif;
       text-align: center; }
@@ -95,30 +96,6 @@ footer {
           text-decoration: none;
           color: black; }
           footer .redes ul li a:hover {
-            color: #cefc85;
-            text-decoration: none; }
-  footer nav {
-    grid-area: navFooter; }
-    footer nav ul {
-      border: solid #FF5757 1px;
-      border-radius: 5px;
-      text-align: center;
-      width: 90%;
-      margin: 20px auto;
-      font-weight: bold;
-      font-family: "Raleway", sans-serif;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around; }
-      footer nav ul li {
-        display: inline-block;
-        margin: 5px;
-        padding: 5px;
-        list-style-type: none; }
-        footer nav ul li a {
-          text-decoration: none;
-          color: black; }
-          footer nav ul li a:hover {
             color: #cefc85;
             text-decoration: none; }
 
@@ -597,6 +574,80 @@ footer .redes h3 {
     .mainProgramas .combinado .cbPers p {
       width: 75%; }
 
+.mainContacto h1 {
+  font-family: "Rufina", serif;
+  text-align: center;
+  margin-top: 2rem; }
+
+.mainContacto h2 {
+  font-family: "Rufina", serif;
+  text-align: center; }
+
+.mainContacto p {
+  font-family: "Raleway", sans-serif;
+  text-align: center; }
+
+.mainContacto section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  margin-top: 2rem; }
+  .mainContacto section .formulario {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center; }
+    .mainContacto section .formulario div {
+      margin: 0.5rem; }
+      .mainContacto section .formulario div input {
+        border-radius: 5px;
+        padding: 5px; }
+      .mainContacto section .formulario div label {
+        margin: 1rem; }
+  .mainContacto section .boton {
+    margin-bottom: 1rem; }
+
+.mainIniciar h2 {
+  font-family: "Rufina", serif;
+  text-align: center;
+  margin-top: 2rem; }
+
+.mainIniciar p {
+  font-family: "Raleway", sans-serif;
+  text-align: center; }
+
+.mainIniciar .formularioIniciar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center; }
+  .mainIniciar .formularioIniciar div {
+    margin: 0.5rem; }
+  .mainIniciar .formularioIniciar button {
+    margin: 0.5rem;
+    background-color: #FF5757;
+    border: #FF5757; }
+
+.mainEmpezar h2 {
+  font-family: "Rufina", serif;
+  text-align: center;
+  margin-top: 2rem; }
+
+.mainEmpezar p {
+  font-family: "Raleway", sans-serif;
+  text-align: center; }
+
+.mainEmpezar .formularioEmpezar {
+  padding: 2rem; }
+  .mainEmpezar .formularioEmpezar button {
+    background-color: #FF5757;
+    border: #FF5757; }
+
 /*<600px*/
 @media screen and (max-width: 600px) {
   /*Header*/
@@ -606,29 +657,26 @@ footer .redes h3 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 0fr;
     grid-template-areas: "logo" "nav" "iniciar"; }
-    header nav ul {
-      font-size: 0.9rem;
-      padding-left: 0; }
     header .logo img {
       width: 55%; }
     header .iniciar {
       justify-self: center; }
+    header nav ul {
+      font-size: 0.9rem;
+      padding-left: 0; }
   /*Footer*/
   footer {
     display: grid;
     gap: 0.3rem;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "redes" "navFooter" "direccion" "logoFooter"; }
-    footer .redes ul {
-      font-size: 0.9rem;
-      padding-left: 0; }
-    footer nav ul {
-      font-size: 0.9rem;
-      padding-left: 0; }
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "redes" "direccion" "logoFooter"; }
     footer .logoFooter {
       width: 40%;
       justify-self: center; }
+    footer .redes ul {
+      font-size: 0.9rem;
+      padding-left: 0; }
   /*INDEX*/
   /* Section intro + carrusel*/
   .intro {
@@ -719,20 +767,16 @@ footer .redes h3 {
     display: grid;
     gap: 0.3rem;
     grid-template-columns: 1fr;
-    grid-template-rows: 0fr 0fr 0fr 0fr;
-    grid-template-areas: "redes" "navFooter" "direccion" "logoFooter"; }
-    footer .redes ul {
-      font-size: 0.7rem;
-      padding-left: 0;
-      margin: 10px auto; }
-    footer nav ul {
-      font-size: 0.7rem;
-      padding-left: 0;
-      margin: 10px auto; }
+    grid-template-rows: 0fr 0fr 0fr;
+    grid-template-areas: "redes" "direccion" "logoFooter"; }
     footer .contacto {
       font-size: 0.8rem;
       margin-top: 1rem;
       margin-bottom: 1rem; }
+    footer .redes ul {
+      font-size: 0.7rem;
+      padding-left: 0;
+      margin: 10px auto; }
   /*INDEX*/
   /* Section intro + carrusel*/
   .intro .textoIntro h1 {
@@ -740,6 +784,11 @@ footer .redes h3 {
   /*Section beneficios*/
   .beneficios .bTitulo {
     font-size: 2.4rem; }
+  /*Section descripción beneficios*/
+  .descBeneficios .dBeneficio2 {
+    margin-top: 2rem; }
+  .descBeneficios .dBeneficio3 {
+    margin-top: 2rem; }
   /*Section caracteristicas*/
   .caract .cTitulo {
     font-size: 2.4rem; }
@@ -780,41 +829,74 @@ footer .redes h3 {
   .mainProgramas h1 {
     font-size: 2.7rem; } }
 
-/*<320px*/
-@media screen and (max-width: 320px) {
+/*<360px*/
+@media screen and (max-width: 360px) {
   /*Header*/
   header nav ul {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
     padding-left: 0; }
   /*Footer*/
   footer {
     display: grid;
     gap: 0.3rem;
     grid-template-columns: 1fr;
-    grid-template-rows: 0fr 0fr 0fr 0fr;
-    grid-template-areas: "redes" "navFooter" "direccion" "logoFooter"; }
-    footer .redes ul {
-      font-size: 0.7rem;
-      padding-left: 0;
-      margin: 10px auto; }
-    footer nav ul {
-      font-size: 0.7rem;
-      padding-left: 0;
-      margin: 10px auto; }
+    grid-template-rows: 0fr 0fr 0fr;
+    grid-template-areas: "redes" "direccion" "logoFooter"; }
     footer .contacto {
       font-size: 0.8rem;
       margin-top: 1rem;
       margin-bottom: 1rem; }
+    footer .redes ul {
+      font-size: 0.5rem;
+      padding-left: 0;
+      margin: 10px auto; }
   /*INDEX*/
   /* Section intro + carrusel*/
   .intro .textoIntro h1 {
     font-size: 2.3rem; }
   /*Section beneficios*/
   .beneficios .bTitulo {
-    font-size: 1.2rem; }
+    font-size: 2.2rem; }
+  /*Section descripción beneficios*/
+  .descBeneficios .dBeneficio1 {
+    display: grid;
+    gap: 0.3rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0fr;
+    grid-template-areas: "textoDB1"  "imgDB1";
+    margin-top: 1rem; }
+    .descBeneficios .dBeneficio1 div {
+      margin: 0 2rem 0 2rem; }
+    .descBeneficios .dBeneficio1 img {
+      align-self: start;
+      width: 75%; }
+  .descBeneficios .dBeneficio2 {
+    display: grid;
+    gap: 0.3rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0fr;
+    grid-template-areas: "textoDB2"  "imgDB2";
+    margin-top: 2rem; }
+    .descBeneficios .dBeneficio2 div {
+      margin: 0 2rem 0 2rem; }
+    .descBeneficios .dBeneficio2 img {
+      align-self: start;
+      width: 75%; }
+  .descBeneficios .dBeneficio3 {
+    display: grid;
+    gap: 0.3rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0fr;
+    grid-template-areas: "textoDB3"  "imgDB3";
+    margin-top: 2rem; }
+    .descBeneficios .dBeneficio3 div {
+      margin: 0 2rem 0 2rem; }
+    .descBeneficios .dBeneficio3 img {
+      align-self: start;
+      width: 75%; }
   /*Section caracteristicas*/
   .caract .cTitulo {
-    font-size: 1.2rem; }
+    font-size: 1.7rem; }
   /*SOBRENOS*/
   /*Quienes somos*/
   .quienesSomos h2 {

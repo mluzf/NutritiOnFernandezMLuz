@@ -5,7 +5,7 @@ footer{
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
         "logoFooter redes"
-        "direccion navFooter";
+        "direccion redes";
 
     .logoFooter{
         grid-area: logoFooter;
@@ -28,6 +28,8 @@ footer{
 
     .redes{
         grid-area: redes;
+        align-self: center;
+
 
         h3{
             font-family: $fuente1;
@@ -62,38 +64,4 @@ footer{
             }
         }
     }
-
-    nav {
-        grid-area: navFooter;
-            
-        ul {
-            border: solid $color_ppal 1px;
-            border-radius: 5px;
-            text-align: center;
-            width: 90%;
-            margin: 20px auto;
-            font-weight: bold;
-            font-family: $fuente2;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-
-            li {
-                display: inline-block;
-                margin: 5px;
-                padding: 5px;
-                list-style-type: none; 
-                    
-                a {
-                    text-decoration: none;
-                    color: black; 
-
-                    &:hover {
-                        color: $color_hover;
-                        text-decoration: none; 
-                    }
-                }
-            }
-        }
-    } 
 }
