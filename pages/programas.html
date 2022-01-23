@@ -14,6 +14,10 @@
     <meta name="description" content="Consultorio online de nutrición saludable. Enseñamos a mejorar la alimentación con planes personalizados.">
     <meta name="keywords" content="nutricion, alimentacion, saludable, comida, dieta, salud, alimentos, alimento, nutricionista">
 
+    <!--Animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/animate.css">
+
     <!--Link CSS-->
     <link rel="stylesheet" href="../css/estilo.css">
 
@@ -43,54 +47,50 @@
     </header>
 
     <main class="mainProgramas">
-        <h1>Programas</h1>
+        <h1 class="animate__animated animate__pulse">Programas</h1>
 
         <hr>
 
         <div class="nutricion">
-            <h2 class="nTitulo"> — Nutrición —</h2>
+            <h2 class="nTitulo wow animate__animated animate__backInUp"> — Nutrición —</h2>
 
-            <article class="nBasico">
+            <article class="nBasico wow animate__animated animate__slideInLeft">
                 <h3>Básico</h3>
                 <p>El programa básico de nutrición consiste en un plan alimentario general para que aprendas a elegir alimentos nutritivos y completos.</p>
                 <p class="precio">$1000</p>
             </article>
 
-            <article class="nPers">
+            <article class="nPers wow animate__animated animate__slideInRight">
                 <h3>Personalizado</h3>
                 <p>El programa personalizado de nutrición consiste en un plan alimentario 100% personalizado para que aprendas a incluir todos los nutrientes en tu alimentación, teniendo en cuenta varios aspectos de tu vida.</p>
                 <p class="precio">$3000</p>
             </article>
         </div>
 
-    <hr>
-
         <div class="entrenamiento">
-            <h2 class="eTitulo"> — Entrenamiento —</h2>
-            <article class="eBasico">
+            <h2 class="eTitulo wow animate__animated animate__backInUp"> — Entrenamiento —</h2>
+            <article class="eBasico wow animate__animated animate__slideInLeft">
                 <h3>Básico</h3>
                 <p>El programa básico de entrenamiento consiste en un plan de rutinas general para que incluyas el ejercicio físico en tu vida diaria.</p>
                 <p class="precio">$1000</p>
             </article>
 
-            <article class="ePers">
+            <article class="ePers wow animate__animated animate__slideInRight">
                 <h3>Personalizado</h3>
                 <p>El programa personalizado de entrenamiento consiste en un plan de rutinas 100% personalizado para que realizas actividad física según tu forma de vida.</p>
                 <p class="precio">$3000</p>
             </article>
         </div>
 
-    <hr>
-
         <div class="combinado">
-            <h2 class="cbTitulo"> — Combinado —</h2>
-            <article class="cbBasico">
+            <h2 class="cbTitulo wow animate__animated animate__backInUp"> — Combinado —</h2>
+            <article class="cbBasico wow animate__animated animate__slideInLeft">
                 <h3>Básico</h3>
                 <p>El programa combinado básico incluye el programa de nutrición y el programa de entrenamiento básicos.</p>
                 <p class="precio">$1800</p>
             </article>
 
-            <article class="cbPers">
+            <article class="cbPers wow animate__animated animate__slideInRight">
                 <h3>Personalizado</h3>
                 <p>El programa combinado personalizado incluye el programa de nutrición y el programa de entrenamiento personalizados.</p>
                 <p class="precio">$5500</p>
@@ -125,5 +125,11 @@
             </ul>
         </div>
     </footer>
+
+<!--JS Animaciones-->
+<script src="../WOW-master/WOW-master/dist/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
 </body>
 </html>

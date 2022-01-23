@@ -14,6 +14,10 @@
     <meta name="description" content="Consultorio online de nutrición saludable. Enseñamos a mejorar la alimentación con planes personalizados.">
     <meta name="keywords" content="nutricion, alimentacion, saludable, comida, dieta, salud, alimentos, alimento, nutricionista">
 
+    <!--Animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/animate.css">
+
     <!--Link CSS-->
     <link rel="stylesheet" href="../css/estilo.css">
 
@@ -48,8 +52,8 @@
     <main>
         <!--Quienes somos-->
         <section class="quienesSomos">
-            <h2>¿Quiénes somos?</h2>
-            <p>Somos un equipo de profesionales capacitados para ayudarte, con la meta de mejorar el estilo de vida de las personas según sus objetivos</p>
+            <h2 class=" animate__animated animate__pulse">¿Quiénes somos?</h2>
+            <p class=" animate__animated animate__pulse">Somos un equipo de profesionales capacitados para ayudarte, con la meta de mejorar el estilo de vida de las personas según sus objetivos</p>
             <img src="../imagenes/quienessomos.jpg" alt="quienes somos" class="imgQS">
         </section>
 
@@ -57,16 +61,16 @@
 
         <!--Equipo-->
         <section class="equipo">
-            <h2>— Equipo —</h2>
+            <h2 class="wow animate__animated animate__bounceInDown">— Equipo —</h2>
 
-            <article class="equipo1">
+            <article class="equipo1 wow animate__animated animate__slideInLeft">
                 <h3>María Fernández</h3>
                 <p>Lic. en Nutrición</p>
     
                 <img src="../imagenes/team1.jpg" alt="equipo" class="imgRedonda">
             </article>
 
-            <article class="equipo2">
+            <article class="equipo2 wow animate__animated animate__slideInRight">
                 <h3>Juan Pérez</h3>
                 <p>Lic. en Educación Fca</p>
     
@@ -77,12 +81,12 @@
         <hr>
 
         <!--Objetivo-->
-        <section class="objetivo">
+        <section class="objetivo ">
             
-            <h2>— Nuestro principal objetivo —</h2>
-            <p>Sabemos que existen dificultades que rodean a la alimentación y la actividad física. Además de respetar tu meta, queremos que dejes atrás toda presión y estereotipo, mejorando tu estilo de vida junto a nosotros. Queremos que encuentres en quien confiar, y puedas disfrutar de este proceso.</p>
+            <h2 class="wow animate__animated animate__bounceInDown">— Nuestro principal objetivo —</h2>
+            <p class="wow animate__animated animate__zoomIn">Sabemos que existen dificultades que rodean a la alimentación y la actividad física. Además de respetar tu meta, queremos que dejes atrás toda presión y estereotipo, mejorando tu estilo de vida junto a nosotros. Queremos que encuentres en quien confiar, y puedas disfrutar de este proceso.</p>
             
-            <a href="./empezar.html">EMPEZAR AQUÍ</a>
+            <a href="./empezar.html" class="wow animate__animated animate__zoomIn">EMPEZAR AQUÍ</a>
         </section>
     </main>
 
@@ -113,5 +117,11 @@
             </ul>
         </div>
     </footer>
+
+<!--JS Animaciones-->
+<script src="../WOW-master/WOW-master/dist/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
 </body>
 </html>

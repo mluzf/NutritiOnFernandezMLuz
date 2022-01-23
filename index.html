@@ -10,12 +10,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&family=Rufina:wght@700&display=swap" rel="stylesheet">
 
-    <!--Keywords-->
+    <!--Description & Keywords-->
     <meta name="description" content="Consultorio online de nutrición saludable y entrenamiento físico. Enseñamos a mejorar tu estilo de vida con planes personalizados.">
     <meta name="keywords" content="nutricion, alimentacion, entrenamiento, consultorio, consulta, ejercicio, fit, saludable, comida, dieta, salud, alimentos, alimento, nutricionista">
 
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--Animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/animate.css">
 
     <!--Link CSS-->
     <link rel="stylesheet" href="./css/estilo.css">
@@ -52,7 +56,7 @@
     <main>
         <!--Section intro + carrusel-->
         <section class="intro">            
-            <div class="textoIntro">
+            <div class="textoIntro animate__animated animate__pulse">
                 <h1>Mejorá tu estilo de vida</h1>
                 <p>NutritiOn ofrece consultas nutricionales y planes de entrenamiento personalizados, con seguimiento de la mano de profesionales capacitados para ayudarte.</p>
             </div>
@@ -90,21 +94,21 @@
 
         <!--Section beneficios-->    
         <section class="beneficios">
-            <h2 class="bTitulo"> — Beneficios — </h2>
+            <h2 class="bTitulo wow animate__animated animate__bounceInDown"> — Beneficios — </h2>
 
-            <div class="beneficio1">
+            <div class="beneficio1 wow animate__animated animate__fadeInUp">
                 <img src="./imagenes/benef1.png" alt="personalizado">
                 <h3>Personalizado</h3>
                 <p>Vos elegís tu plan según tus preferencias.</p>
             </div>
 
-            <div class="beneficio2">
+            <div class="beneficio2 wow animate__animated animate__fadeInUp">
                 <img src="./imagenes/benef2.png" alt="educacional">
                 <h3>Educacional</h3>
                 <p>Diversidad de herramientas para enseñarte como mejorar tu estilo de vida y mantenerlo en el tiempo.</p> 
             </div>
 
-            <div class="beneficio3">
+            <div class="beneficio3 wow animate__animated animate__fadeInUp">
                 <img src="./imagenes/benef3.png" alt="accesible">
                 <h3>Accesible</h3>
                 <p>Precios pensados para vos, con el método de pago que elijas.</p> 
@@ -116,7 +120,7 @@
         <!--Section descripción beneficios-->    
         <section class="descBeneficios">
             <article class="dBeneficio1">
-                <div>
+                <div class="wow animate__animated animate__zoomIn">
                     <h3>Personalizado</h3>
                     <p>Planes nutricionales, de etrenamiento o ambos combinados.
                     Adaptados a tu cuerpo, creencias, tiempo... tenemos en cuenta tu forma de vida.
@@ -125,11 +129,11 @@
                     <a href="./pages/programas.html" class="verProg"> Ver programas </a>
                 </div>
 
-                <img src="./imagenes/beneficio1.jpg" alt="personalizado">
+                <img src="./imagenes/beneficio1.jpg" alt="personalizado" class="wow animate__animated animate__slideInRight">
             </article>
 
             <article class="dBeneficio2">
-                <div>
+                <div class="wow animate__animated animate__zoomIn">
                     <h3>Educacional</h3>
                     <p>Queremos que entiendas qué hacer, cómo hacerlo y por qué hacerlo. Por eso nos encargamos de enseñarte y responder todas tus dudas. 
                     Seguimiento personalizado, cuando vos lo necesites y de la forma que prefieras, eligiendo entre presencial u online.
@@ -137,11 +141,11 @@
                     <a href="./pages/programas.html" class="verProg"> Ver programas </a>
                 </div>
 
-                <img src="./imagenes/beneficio2.jpg" alt="educacional">
+                <img src="./imagenes/beneficio2.jpg" alt="educacional" class="wow animate__animated animate__slideInLeft">
             </article>
 
             <article class="dBeneficio3">
-                <div>
+                <div class="wow animate__animated animate__zoomIn">
                     <h3>Accesible</h3>
                     <p>Tenemos muchas opciones para vos, con variedad de precios y todos los métodos de pago.
                     Además, ofrecemos beneficios a nuestros clientes por sus compromisos y esfuerzos.
@@ -150,7 +154,7 @@
                     <a href="./pages/programas.html" class="verProg"> Ver programas </a>
                 </div>
                 
-                <img src="./imagenes/beneficio3.jpg" alt="accesible">
+                <img src="./imagenes/beneficio3.jpg" alt="accesible" class="wow animate__animated animate__slideInRight">
             </article>
         </section>
 
@@ -158,34 +162,34 @@
 
         <!--Section caracteristicas-->    
         <section class="caract">
-            <h2 class="cTitulo"> — Más características —</h2>
+            <h2 class="cTitulo wow animate__animated animate__bounceInDown"> — Más características —</h2>
 
-            <div class="c1">
+            <div class="c1 wow animate__animated animate__pulse">
                 <h3>Tu propio seguimiento</h3>
                 <p>Crea tu cuenta para guardar tus datos, info y progreso. Una forma fácil de tener todo a mano.</p>
             </div>
 
-            <div class="c2">
+            <div class="c2 wow animate__animated animate__pulse">
                 <h3>Mensajes rápidos</h3>
                 <p>Si tenes alguna consulta fuera de turno, podés mandarnos un mensaje desde tu cuenta y respondemos lo antes posible.</p>
             </div>
 
-            <div class="c3">
+            <div class="c3 wow animate__animated animate__pulse">
                 <h3>Recetas</h3>
                 <p>Según el programa que elijas y el plan otorgado, te brindamos recetas para que tengas más ideas a la hora de cocinar.</p>
             </div>
 
-            <div class="c4">
+            <div class="c4 wow animate__animated animate__pulse">
                 <h3>Guías informativas rápidas</h3>
                 <p>Facilitamos información en guías faciles y rápidas, que van a servirte de complemento en tu camino.</p>
             </div>
 
-            <div class="c5">
+            <div class="c5 wow animate__animated animate__pulse">
                 <h3>Blog</h3>
                 <p>Vas a poder compartir actualizaciones, dudas, logros, e interactuar con toda la comunidad.</p>
             </div>
 
-            <div class="c6">
+            <div class="c6 wow animate__animated animate__pulse">
                 <h3>Charlas informativas</h3>
                 <p>Charlas mensuales gratis vía online, para toda la comunidad.</p>
             </div>
@@ -220,9 +224,14 @@
         </div>
     </footer>
 
-<!--JS-->
+<!--JS Bootstrap-->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
+<!--JS Animaciones-->
+<script src="./WOW-master/WOW-master/dist/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 </body>
 </html>

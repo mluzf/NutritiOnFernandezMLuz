@@ -560,7 +560,8 @@ footer .redes h3 {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 2fr;
   grid-template-areas: "cbTitulo cbTitulo" "cbBasico cbPers";
-  justify-items: center; }
+  justify-items: center;
+  margin-bottom: 2rem; }
   .mainProgramas .combinado .cbTitulo {
     grid-area: cbTitulo;
     font-family: "Rufina", serif;
